@@ -6,7 +6,7 @@
 
 ```markdown
 1. Hold down ALT + F11 keys to open the Microsoft Visual Basic for Applications window.
-2. Click Insert > Module, and past the following code in the Module Window.
+2. Click Insert > Module, and paste the following code in the Module Window.
 ```
 
 ```vb
@@ -19,7 +19,7 @@ Sub AddSheets()
 
     Application.ScreenUpdating = False
 
-    For Each excelRange In excelWorksheet.Range("A1:A7")
+    For Each excelRange In excelWorksheet.Range("A1:A5")
         With excelWorkbook
             .Sheets.Add after:=.Sheets(.Sheets.Count)
 
@@ -41,9 +41,9 @@ End Sub
 ```
 
 ```markdown
-# Note: In the aboce code, A1:A7 is the cell range that you want to create sheets based on, please change it to your need.
+# Note: In the above code, A1:A5 is the cell range that you want to create sheets based on, please change it to your need.
 ```
 
 ```markdown
-3. Press F5 key to run this code, and the new sheets have been created after all sheets in current workbook.
+3. Press F5 key to run this code, and the new sheets will be created after all sheets in the current workbook.
 ```
