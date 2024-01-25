@@ -2,7 +2,7 @@
 
 [document descrition]
 
-## Creating multiple worksheets from a list of cell values
+## Add Worksheets to a Workbook from a list of cell values in the same Workbook
 
 ```markdown
 1. Hold down ALT + F11 keys to open the Microsoft Visual Basic for Applications window.
@@ -46,4 +46,28 @@ End Sub
 
 ```markdown
 3. Press F5 key to run this code, and the new sheets will be created after all sheets in the current workbook.
+```
+
+## Add Worksheet names to cells in a Workbook
+
+```markdown
+1. Click Formulas, under the Defined Names tab click Name Manager, then click the New button.
+2. Type ListSheets in the Name field of the pop-up window.
+3. Add the below formula to the Refers to field, then click OK.
+```
+
+```vb
+=REPLACE(GET.WORKBOOK(1),1,FIND("]",GET.WORKBOOK(1)),"")
+```
+
+```markdown
+4. In the first cell you want the Worksheet names to start, paste the following formaula.
+```
+
+```vb
+=INDEX(ListSheets,ROW(A2))
+```
+
+```markdown
+## Note: In the above formula, A2 referes to the second Worksheet, assuming that the first Worksheet is the dashboard that will have the names of the Worksheets added to the Workbook.
 ```
