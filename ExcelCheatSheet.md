@@ -4,8 +4,10 @@
 
 ## Creating multiple worksheets from a list of cell values
 
+```markdown
 1. Hold down ALT + F11 keys to open the Microsoft Visual Basic for Applications window.
 2. Click Insert > Module, and past the following code in the Module Window.
+```
 
 ```vb
 Sub AddSheets()
@@ -36,4 +38,12 @@ Sub AddSheets()
     Application.ScreenUpdating = True
 
 End Sub
+```
+
+```html
+<em>Note: In the aboce code, A1:A7 is the cell range that you want to create sheets based on, please change it to your need. </em>
+```
+
+```markdown
+3. Press F5 key to run this code, and the new sheets have been created after all sheets in current workbook.
 ```
