@@ -41,7 +41,7 @@ End Sub
 ```
 
 ```markdown
-<em>Note: In the aboce code, A1:A7 is the cell range that you want to create sheets based on, please change it to your need. </em>
+# Note: In the aboce code, A1:A7 is the cell range that you want to create sheets based on, please change it to your need.
 ```
 
 ```markdown
