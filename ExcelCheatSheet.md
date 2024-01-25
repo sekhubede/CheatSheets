@@ -7,7 +7,7 @@
 1. Hold down ALT + F11 keys to open the Microsoft Visual Basic for Applications window.
 2. Click Insert > Module, and past the following code in the Module Window.
 
-```
+```vb
 Sub AddSheets()
     Dim excelRange As Excel.Range
     Dim excelWorksheet As Excel.Worksheet
@@ -22,7 +22,7 @@ Sub AddSheets()
             .Sheets.Add after:=.Sheets(.Sheets.Count)
 
             On Error Resume Next
-            
+
             ActiveSheet.Name = excelRange.Value
 
             If Err.Number = 1004 Then
